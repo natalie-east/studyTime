@@ -160,10 +160,28 @@ const plantNeedsWater = (day) => {
     }
 };
 
-function getUserChoice = (userInput.toLowerCase()){
-    if (userInput === 'rock' || userInput ==='paper' || userInput === 'scissors'){
-        return userInput;
-    } else{
-        console.log ('Error!');
-    }
+const city = 'New York City';
 
+const logCitySkyline = () => {
+    let skyscraper = 'Empire State Building';
+    return 'The stars over the ' + skyscraper + ' in ' + city;
+};
+
+console.log(logCitySkyline());
+
+const satellite = ('The Moon');
+const galaxy = ('The Milky Way');
+const stars = ('North Star');
+function callMyNightSky(){
+    return ('Night Sky: ' + satellite + ', ' + stars + ' , and ' + galaxy);
+}
+
+const satellite = 'The Moon';
+const galaxy = 'The Milky Way';
+const stars = 'North Star';
+
+const callMyNightSky = () => {
+    return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+};
+
+console.log(callMyNightSky());
