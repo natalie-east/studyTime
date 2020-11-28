@@ -116,12 +116,54 @@ function sayThanks(name) {
 //created a name that says 'Cole'
 sayThanks('Cole')
 
-//setting default parameters//
+//setting default parameters// I set each item to a default variable.
 function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
     console.log(`Remember to buy ${item1}`);
     console.log(`Remember to buy ${item2}`);
     console.log(`Remember to buy ${item3}`);
 }
+//using the return key to output a number
+function monitorCount(rows, columns){
+    return (rows * columns);
+}
+//calculate cost of monitors by using the return action
+const numOfMonitors = monitorCount(5, 4);
+console.log(numOfMonitors)
 
+function monitorCount(rows, columns) {
+    return rows * columns;
+}
+function costOfMonitors(rows, columns){
+    return monitorCount(rows, columns) * 200;
+}
+const totalCost = costOfMonitors(5,4);
+console.log(totalCost)
 
+//SYNTAX PLEASE PAY ATTENTION//
+const plantNeedsWater = function (day){
+    if (day === 'Wednesday'){
+        return true;
+    }else {
+        return false;
+    }
+};
+plantNeedsWater('Tuesday');
+console.log (plantNeedsWater('Tuesday'))
+//SYNTAX PLEASE PAY ATTENTION//
+// A NEW WAY TO WRITE A FUNCTION
+const plantNeedsWater = (day) => {
+    //NOTICE THE EQUAL SIGN THEN A 'FAT ARROW' POINTING TO CURLY BRACES'//
+    if (day === 'Wednesday') {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+function getUserChoice = (userInput.toLowerCase()){
+    if (userInput === 'rock' || userInput ==='paper' || userInput === 'scissors'){
+        return userInput;
+    } else{
+        console.log ('Error!');
+    }
 
