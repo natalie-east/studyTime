@@ -185,3 +185,66 @@ const callMyNightSky = () => {
 };
 
 console.log(callMyNightSky());
+
+
+//As a function declaration:
+function canIVote(age) {
+    if (age >= 18) {
+        return true
+    } else {
+        return false
+    }
+}
+
+// Write your function here:
+function agreeOrDisagree(num1, num2) {
+    if (num1 === num2) {
+        return 'You agree!';
+    } else {
+        (num1 != num2);
+        return 'You disagree!'
+    }
+}
+
+// Uncomment the line below when you're ready to try out your function
+console.log(agreeOrDisagree("yep", "yep"))
+//Should print 'You agree!'
+
+// We encourage you to add more function call of your own to test your code!
+
+// Write your function here:
+const lifePhase = (age)
+let age = 5;
+switch (lifePhase){
+    case (age >= 0 && age <= 3):
+        console.log ('baby');
+        break;
+    case (age >= 4 && age <= 12):
+        console.log ('child');
+        break;
+    case (age >= 13 && age <= 19):
+        console.log ('teen');
+        break;
+    case (age >= 20 && age <= 64):
+        console.log ('adult');
+        break;
+    case(age >= 65 && age <= 140):
+        console.log ('senior citizen');
+        break;
+    case(age <= 0 && age >= 140):
+        console.log ('This is not a valid age');
+        break;
+
+}
+
+
+
+
+
+
+
+
+// Uncomment the line below when you're ready to try out your function
+console.log(lifePhase(5)) //should print 'child'
+
+// We encourage you to add more function calls of your own to test your code!
