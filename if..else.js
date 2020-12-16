@@ -158,7 +158,7 @@ const plantNeedsWater = (day) => {
     } else {
         return false;
     }
-};
+}
 
 const city = 'New York City';
 
@@ -248,3 +248,143 @@ switch (lifePhase){
 console.log(lifePhase(5)) //should print 'child'
 
 // We encourage you to add more function calls of your own to test your code!
+
+const lifePhase = age => {
+    if (age < 0 || age > 140) {
+        return 'This is not a valid age'
+    } else if (age < 4) {
+        return 'baby'
+    } else if (age < 13) {
+        return 'child'
+    } else if (age < 20) {
+        return 'teen'
+    } else if (age < 65) {
+        return 'adult'
+    } else {
+        return 'senior citizen'
+    }
+}
+
+
+const finalGrade = (midterm, final, homework) => {
+    if ((midterm < 0 || midterm > 100) || (final < 0 || final > 100) || (homework < 0 || homework > 100)) {
+        return 'You have entered an invalid grade.'
+    }
+    let average = (midterm + final + homework) / 3
+    if (average < 60) {
+        return 'F'
+    }
+    else if (average < 70) {
+        return 'D'
+    }
+    else if (average < 80) {
+        return 'C'
+    }
+    else if (average < 90) {
+        return 'B'
+    } else {
+        return 'A'
+    }
+}
+
+/*
+//as a function declaration:
+function finalGrade(midterm, final, homework) {
+    if ((midterm < 0 || midterm > 100) || (final < 0 || final > 100) || (homework < 0 || homework > 100)) {
+        return 'You have entered an invalid grade.'
+    }
+    let average = (midterm + final + homework) / 3
+    if (average < 60) {
+        return 'F'
+    }
+    else if (average < 70) {
+        return 'D'
+    }
+    else if (average < 80) {
+        return 'C'
+    }
+    else if (average < 90) {
+        return 'B'
+    } else {
+        return 'A'
+    }
+}
+*/
+
+let getSleepHours = 'Monday'
+switch (getSleepHours){
+    case ('Monday'):
+        console.log (8);
+        break;
+    case ('Tuesday'):
+        console.log (8);
+        break;
+    case ('Wednesday'):
+        console.log (8);
+        break;
+    case ('Thurday'):
+        console.log (8);
+        break;
+    case ('Friday'):
+        console.log (8);
+    case('Saturday'):
+        console.log (8);
+        break;
+    case('Sunday'):
+        console.log (8);
+        break;
+    case ('Default'):
+        console.log('You need more sleep');
+        break;
+}
+
+console.log()
+
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+// Write your code below
+let alienShip = {
+    retreat(){
+        console.log(retreatMessage)
+    },
+    takeOff () {
+        console.log('Spim... Borp... Glix... Blastoff!')
+    }
+};
+alienShip.retreat();
+alienShip.takeOff();
+
+// nested object and retrieving and changing a variable within an object
+let spaceship = {
+    passengers: [{name: 'Space Dog'}],
+    telescope: {
+        yearBuilt: 2018,
+        model: "91031-XLT",
+        focalLength: 2032
+    },
+    crew: {
+        captain: {
+            name: 'Sandra',
+            degree: 'Computer Engineering',
+            encourageTeam() { console.log('We got this!') },
+            'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+    },
+    engine: {
+        model: "Nimbus2000"
+    },
+    nanoelectronics: {
+        computer: {
+            terabytes: 100,
+            monitors: "HD"
+        },
+        'back-up': {
+            battery: "Lithium",
+            terabytes: 50
+        }
+    }
+};
+
+let capFave = spaceship.crew.captain['favorite foods'][0];
+
+let firstPassenger = spaceship.passengers[0];
