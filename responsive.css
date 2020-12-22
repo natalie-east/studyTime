@@ -2,13 +2,11 @@ body {
     background-color: rebeccapurple;
 }
 
-@media screen and (min-width:320px) and (max-width:479px) {
-body{ background-color: hotpink;
-}
-}
 
-@media screen and (min-width:480px) and (max-width:767px){
-    body {
-        background-color: aqua;
-    }
+
+.navbar-logo {
+    position: center;
+    flex-direction: row;
+    align-self: center;
+    justify-content: flex-start;
 }
