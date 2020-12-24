@@ -5,8 +5,7 @@ body {
 
 
 .navbar-logo {
-    position: center;
+    position: absolute;
     flex-direction: row;
-    align-self: center;
     justify-content: flex-start;
 }
