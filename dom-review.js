@@ -36,10 +36,8 @@ $(".runner").hover(function(){
 
 
 //TODO: Write a function that changes the font of all text to comic sans 5 seconds after the page loads
-$("body").ready(function(){
-        $(this).css('font-family', 'comic sans')
-    }
-)
+
+setInterval(function(){ alert("Hello"); }, 3000);
 
 
 
